@@ -5,7 +5,7 @@ main {
   width: 100vw;
 }
 
-.container {
+#parent-container {
   position: relative;
   border: 1px solid black;
   height: 800px;
@@ -13,12 +13,12 @@ main {
   overflow: hidden;
 }
 
-.box {
+.sample-box {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: indigo;
-  height: 60px;
-  width: 60px;
+  border: 1px solid black;
+  height: 80px;
+  width: 80px;
   cursor: pointer;
 }

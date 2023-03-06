@@ -1,14 +1,13 @@
 import './App.css';
-import useDragger from './useDragger';
+import SampleBox from './components/SampleBox';
+import Draggable from './hoc/Draggable';
 
 function App() {
-  useDragger('child-box');
-
   return (
     <main>
-      <div className="container">
-        <div id="child-box" className="box"></div>
-      </div>
+      <Draggable height={800} width={800} border>
+        <SampleBox />
+      </Draggable>
     </main>
   );
 }
